@@ -15,14 +15,14 @@ function useFilter(data) {
 
 	const filter = Object.values(groupedDays).map((item) => {
 		const maxTemp = item.reduce((prev, current) => {
-			const temp = prev.main.temp_max > current.main.temp_max ? prev : current;
+			const temp = prev.main?.temp_max > current.main.temp_max ? prev : current;
 			return temp;
-		});
+		}, {});
 
 		const minTemp = item.reduce((prev, current) => {
-			const temp = prev.main.temp_min < current.main.temp_min ? prev : current;
+			const temp = prev.main?.temp_min < current.main.temp_min ? prev : current;
 			return temp;
-		});
+		}, {});
 
 		return [maxTemp, minTemp];
 	});
