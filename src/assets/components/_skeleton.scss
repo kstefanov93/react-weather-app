@@ -6,6 +6,8 @@
 
 	.skeleton__grid {
 		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 

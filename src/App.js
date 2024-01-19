@@ -1,5 +1,5 @@
 import { createPortal } from 'react-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useContext } from 'react';
 import WeatherContent from './context/context';
 import useApi from './hooks/useApi';
