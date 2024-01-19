@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+
+	padding: 0.5rem;
+	border: 0.1rem solid $c-black;
+	background: $c-white;
+	transition: color 0.3s, background 0.3s;
+
+	&:hover {
+		color: $c-white;
+		background: $c-black;
+	}
+}
+
+/*  Btn block  */
+
+.btn--block {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+}

@@ -1,0 +1,36 @@
+.tile {
+	padding: 1rem;
+	box-shadow: 0 0.2rem 0.4rem rgba($c-black, 0.4);
+	border-radius: 2rem;
+	background: $c-white;
+	transition: margin 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 0.4rem 0.6rem rgba($c-black, 0.4);
+	}
+
+	@include breakpoint-up(mobile) {
+		&:hover {
+			margin-top: -2rem;
+		}
+	}
+
+	.tile__inner {
+		position: relative;
+	}
+
+	ul {
+		text-align: center;
+		list-style: none;
+	}
+
+	p {
+		margin-bottom: 0.5rem;
+	}
+
+	small {
+		display: block;
+		margin-bottom: 2rem;
+	}
+}

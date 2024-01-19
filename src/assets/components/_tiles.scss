@@ -1,0 +1,37 @@
+.tiles {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.tiles__items {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: -1rem;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin: 0;
+		}
+	}
+
+	.tiles__item {
+		flex: 0 0 20%;
+		max-width: 20%;
+		padding: 1rem;
+
+		@include breakpoint-down(tablet) {
+			flex: 0 0 33.33%;
+			max-width: 33.33%;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding: 0 0 2rem 0;
+		}
+	}
+}
